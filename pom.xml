@@ -26,8 +26,6 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<junit.version>4.12</junit.version>
-		<shiro.version>1.2.4</shiro.version>
-		<http.version>4.5.1</http.version>
 		<agile-framework.version>1.0.0</agile-framework.version>
 		<agile-plugin-security.version>1.0.1</agile-plugin-security.version>
 	</properties>
