@@ -1,0 +1,2 @@
+INSERT INTO `customer` VALUES ('08bbb93063f74b96b95a25f2a3ba96d4', 'customer1', 'hanyx', '18604230000', 'yongxu16@163.com', NULL);
+INSERT INTO `customer` VALUES ('884d1c0fafed473d8eb581cab6fe5cce', 'customer2', 'suny', '18678230000', 'suny@163.com', NULL);
