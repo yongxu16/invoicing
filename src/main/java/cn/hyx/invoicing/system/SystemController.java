@@ -4,6 +4,8 @@ import org.agle4j.framework.annotation.Action;
 import org.agle4j.framework.annotation.Controller;
 import org.agle4j.framework.bean.Param;
 import org.agle4j.framework.bean.View;
+import org.agle4j.plugin.security.SecurityHelper;
+import org.agle4j.plugin.security.exception.AuthcException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -41,12 +43,12 @@ public class SystemController {
 	public View loginSubmit(Param param) {
 		String username = param.getString("username") ;
 		String password = param.getString("password") ;
-//		try {
-//			SecurityHelper.login(username, password);
-//		} catch (AuthcException e) {
-//			LOGGER.error("login failuer", e);
-//			return new View("/login") ;
-//		}
+		try {
+			SecurityHelper.login(username, password);
+		} catch (AuthcException e) {
+			LOGGER.error("login failuer", e);
+			return new View("/login") ;
+		}
 		return new View("/customer") ;
 	}
 	
@@ -54,7 +56,7 @@ public class SystemController {
 	 * 提交注销请求
 	 */
 	public View logout() {
-//		SecurityHelper.logout();
+		SecurityHelper.logout();
 		return new View("/") ;
 	}
 	
