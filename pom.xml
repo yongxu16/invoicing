@@ -27,7 +27,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<junit.version>4.12</junit.version>
 		<agile-framework.version>1.0.0</agile-framework.version>
-		<agile-plugin-security.version>1.0.1</agile-plugin-security.version>
+		<agile-plugin-security.version>1.1.0</agile-plugin-security.version>
 	</properties>
 
 	<dependencies>
