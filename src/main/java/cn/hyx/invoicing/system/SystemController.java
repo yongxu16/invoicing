@@ -55,6 +55,7 @@ public class SystemController {
 	/**
 	 * 提交注销请求
 	 */
+	@Action("get:/logout")
 	public View logout() {
 		SecurityHelper.logout();
 		return new View("/");
