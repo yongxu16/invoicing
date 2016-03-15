@@ -11,7 +11,7 @@
 
 <security:guest>
 	<p>游客</p>
-	<a href="<c:url value="${BASE}/login"/>" >登录</a>
+	<a href="${BASE}/login">登录</a>
 </security:guest>
 
 <security:user>
